@@ -1,1 +1,642 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickVC-demo</title>
+  <style>
+body {
+  font-size: 20px;
+}
+audio {
+  width: 200px;
+  margin-right: 10px;
+}
+
+</style>
+</head>
+<body>
+    <h2>Audio samples - QuickVC: Any-To-Many Voice Conversion Using Inverse Short-Time Fourier Transform for Faster Conversion</h2>
+    <!--<h2>Audio samples for paper QuickVC</h2>-->
+  
+  <hr style="height:3px;border:none;border-top:5px solid #555555;" />
+
+    <h2>VC performance of different methods, where QuickVC-nosr and QuickVC-sr is our methods. The code: https://github.com/quickvc/QuickVC-VoiceConversion</h2>
+  
+   <li>All sources are from Librispeech dataset, which are unseen during training:</li>
+
+
+
+    <h3>Target reference utterance-<audio controls>
+       <source src="./target/p226_006.wav" type="audio/wav">
+       </audio> p226_006 </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Source</th>
+      <th>QuickVC-nosr (proposed)</th>
+      <th>QuickVC-sr (proposed)</th>
+      <th>Diff-VCTK</th>
+      <th>BNE-PPG-VC</th>
+      <th>VQMIVC</th>
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/7433-89646-0027.wav" type="audio/wav">
+       </audio> 7433-89646-0027
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p226_006from7433-89646-0027.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/7607-89899-0000.wav" type="audio/wav">
+       </audio> 7607-89899-0000
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p226_006from7607-89899-0000.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/7769-99397-0053.wav" type="audio/wav">
+       </audio> 7769-99397-0053
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p226_006from7769-99397-0053.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/8200-278197-0010.wav" type="audio/wav">
+       </audio> 8200-278197-0010
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p226_006from8200-278197-0010.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    </table>
+
+  <h3>Target reference utterance-<audio controls>
+       <source src="./target/p229_006.wav" type="audio/wav">
+       </audio> p229_006 </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Source</th>
+      <th>QuickVC-nosr (proposed)</th>
+      <th>QuickVC-sr (proposed)</th>
+      <th>Diff-VCTK</th>
+      <th>BNE-PPG-VC</th>
+      <th>VQMIVC</th>
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/572-126495-0022.wav" type="audio/wav">
+       </audio> 572-126495-0022
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p229_006from572-126495-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p229_006from572-126495-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p229_006from572-126495-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p229_006from572-126495-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p229_006from572-126495-0022.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/807-124223-0065.wav" type="audio/wav">
+       </audio> 807-124223-0065
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p229_006from807-124223-0065.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p229_006from807-124223-0065.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p229_006from807-124223-0065.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p229_006from807-124223-0065.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p229_006from807-124223-0065.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/1168-134958-0091.wav" type="audio/wav">
+       </audio> 1168-134958-0091
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p229_006from1168-134958-0091.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/1691-142296-0022.wav" type="audio/wav">
+       </audio> 1691-142296-0022
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p229_006from1691-142296-0022.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    </table> 
+
+
+    <h3>Target reference utterance-<audio controls>
+       <source src="./target/p246_011.wav" type="audio/wav">
+       </audio> p246_011 </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Source</th>
+      <th>QuickVC-nosr (proposed)</th>
+      <th>QuickVC-sr (proposed)</th>
+      <th>Diff-VCTK</th>
+      <th>BNE-PPG-VC</th>
+      <th>VQMIVC</th>
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/265-136853-0007.wav" type="audio/wav">
+       </audio> 265-136853-0007
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p246_011from265-136853-0007.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p246_011from265-136853-0007.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p246_011from265-136853-0007.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p246_011from265-136853-0007.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p246_011from265-136853-0007.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/428-125879-0020.wav" type="audio/wav">
+       </audio> 428-125879-0020
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p246_011from428-125879-0020.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p246_011from428-125879-0020.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p246_011from428-125879-0020.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p246_011from428-125879-0020.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p246_011from428-125879-0020.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/727-124443-0119.wav" type="audio/wav">
+       </audio> 727-124443-0119
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p246_011from727-124443-0119.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p246_011from727-124443-0119.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p246_011from727-124443-0119.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p246_011from727-124443-0119.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p246_011from727-124443-0119.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/1691-142296-0075.wav" type="audio/wav">
+       </audio> 1691-142296-0075
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p246_011from1691-142296-0075.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    </table> 
+
+    
+    <h3>Target reference utterance-<audio controls>
+       <source src="./target/p312_019.wav" type="audio/wav">
+       </audio> p312_019 </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Source</th>
+      <th>QuickVC-nosr (proposed)</th>
+      <th>QuickVC-sr (proposed)</th>
+      <th>Diff-VCTK</th>
+      <th>BNE-PPG-VC</th>
+      <th>VQMIVC</th>
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/811-130148-0027.wav" type="audio/wav">
+       </audio> 811-130148-0027
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p312_019from811-130148-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p312_019from811-130148-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p312_019from811-130148-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p312_019from811-130148-0027.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p312_019from811-130148-0027.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/876-126411-0093.wav" type="audio/wav">
+       </audio> 876-126411-0093
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p312_019from876-126411-0093.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p312_019from876-126411-0093.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p312_019from876-126411-0093.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p312_019from876-126411-0093.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p312_019from876-126411-0093.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/1094-157767-0044.wav" type="audio/wav">
+       </audio> 1094-157767-0044
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p312_019from1094-157767-0044.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./sourcewav/6978-92936-0012.wav" type="audio/wav">
+       </audio> 6978-92936-0012
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-nosr/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./quickvc-sr/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./diffvc/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./ppgvc/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./vqmivc/p312_019from6978-92936-0012.wav_gen.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    </table> 
+       
+
+</body>
+</html>
