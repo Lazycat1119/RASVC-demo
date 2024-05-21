@@ -17,60 +17,33 @@ audio {
 </head>
 <body>
     <h2>Audio samples - Real-Time and Accurate: Zero-shot High-Fidelity Singing Voice Conversion with Multi-Condition Flow Synthesis</h2>
-    <!--<h2>Audio samples for paper QuickVC</h2>-->
+
   
   <hr style="height:3px;border:none;border-top:5px solid #555555;" />
 
-    <h2>VC performance of different methods, where QuickVC-nosr and QuickVC-sr is our methods. The code: https://github.com/quickvc/QuickVC-VoiceConversion</h2>
-  
-   <li>All sources are from Librispeech dataset, which are unseen during training:</li>
+    <h2>We separately demonstrated the performance of the RASVC model in handling long English singing conversion and short Chinese singing conversion, with each type of conversion including both male and female source singers.</h2>
 
-
-
-    <h3>Target reference utterance-<audio controls>
-       <source src="./target/p226_006.wav" type="audio/wav">
-       </audio> p226_006 </h3>
+    <h3>Long English singing conversion-male<audio controls>
+       <source src="./long English/source-male/source.wav" type="audio/wav">
+       </audio> source-male </h3>
     <table border="1">
     <tr>
       <th>No.</th>
-      <th>Source</th>
-      <th>QuickVC-nosr (proposed)</th>
-      <th>QuickVC-sr (proposed)</th>
-      <th>Diff-VCTK</th>
-      <th>BNE-PPG-VC</th>
-      <th>VQMIVC</th>
+      <th>Target</th>
+      <th>RASVC converted</th>
+      
     </tr>
 
     <tr>
        <td>1</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/7433-89646-0027.wav" type="audio/wav">
-       </audio> 7433-89646-0027
+       <source src="./long English/source-male/target/target8.wav" type="audio/wav">
+      </audio>
        </td>
-       <td>
+      <td>
        <audio controls>
-       <source src="./quickvc-nosr/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p226_006from7433-89646-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p226_006from7433-89646-0027.wav_gen.wav" type="audio/wav">
+       <source src="./long English/source-male/RVSVC/convert8.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
@@ -79,66 +52,27 @@ audio {
        <td>2</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/7607-89899-0000.wav" type="audio/wav">
-       </audio> 7607-89899-0000
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
+       <source src="./long English/source-male/target/target9.wav" type="audio/wav">
        </audio>
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-sr/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
+       <source src="./long English/source-male/RVSVC/convert9.wav" type="audio/wav">
        </audio>
        </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p226_006from7607-89899-0000.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p226_006from7607-89899-0000.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
+      
     </tr>
 
     <tr>
        <td>3</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/7769-99397-0053.wav" type="audio/wav">
-       </audio> 7769-99397-0053
+       <source src="./long English/source-male/target/target10.wav" type="audio/wav">
+       </audio> 
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-nosr/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p226_006from7769-99397-0053.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p226_006from7769-99397-0053.wav_gen.wav" type="audio/wav">
+       <source src="./long English/source-male/RVSVC/convert10.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
@@ -147,82 +81,39 @@ audio {
        <td>4</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/8200-278197-0010.wav" type="audio/wav">
-       </audio> 8200-278197-0010
+       <source src="./long English/source-male/target/target11.wav" type="audio/wav">
+       </audio> 
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-nosr/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p226_006from8200-278197-0010.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p226_006from8200-278197-0010.wav_gen.wav" type="audio/wav">
+       <source src="./long English/source-male/RVSVC/convert11.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
 
     </table>
 
-  <h3>Target reference utterance-<audio controls>
-       <source src="./target/p229_006.wav" type="audio/wav">
-       </audio> p229_006 </h3>
+    <h3>Long English singing conversion-female<audio controls>
+       <source src="./long English/source-female/source.wav" type="audio/wav">
+       </audio> source-female </h3>
     <table border="1">
     <tr>
       <th>No.</th>
-      <th>Source</th>
-      <th>QuickVC-nosr (proposed)</th>
-      <th>QuickVC-sr (proposed)</th>
-      <th>Diff-VCTK</th>
-      <th>BNE-PPG-VC</th>
-      <th>VQMIVC</th>
+      <th>Target</th>
+      <th>RASVC converted</th>
+      
     </tr>
 
     <tr>
        <td>1</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/572-126495-0022.wav" type="audio/wav">
-       </audio> 572-126495-0022
+       <source src="./long English/source-female/target/12.wav" type="audio/wav">
+      </audio>
        </td>
-       <td>
+      <td>
        <audio controls>
-       <source src="./quickvc-nosr/p229_006from572-126495-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p229_006from572-126495-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p229_006from572-126495-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p229_006from572-126495-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p229_006from572-126495-0022.wav_gen.wav" type="audio/wav">
+       <source src="./long English/source-female/RASVC/convert12.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
@@ -231,66 +122,27 @@ audio {
        <td>2</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/807-124223-0065.wav" type="audio/wav">
-       </audio> 807-124223-0065
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p229_006from807-124223-0065.wav.wav" type="audio/wav">
+       <source src="./long English/source-female/target/13.wav" type="audio/wav">
        </audio>
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-sr/p229_006from807-124223-0065.wav.wav" type="audio/wav">
+       <source src="./long English/source-female/RASVC/convert13.wav" type="audio/wav">
        </audio>
        </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p229_006from807-124223-0065.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p229_006from807-124223-0065.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p229_006from807-124223-0065.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
+      
     </tr>
 
     <tr>
        <td>3</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/1168-134958-0091.wav" type="audio/wav">
-       </audio> 1168-134958-0091
+       <source src="./long English/source-female/target/14.wav" type="audio/wav">
+       </audio> 
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-nosr/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p229_006from1168-134958-0091.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p229_006from1168-134958-0091.wav_gen.wav" type="audio/wav">
+       <source src="./long English/source-female/RASVC/convert14.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
@@ -299,236 +151,40 @@ audio {
        <td>4</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/1691-142296-0022.wav" type="audio/wav">
-       </audio> 1691-142296-0022
+       <source src="./long English/source-female/target/15.wav" type="audio/wav">
+       </audio> 
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-nosr/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p229_006from1691-142296-0022.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p229_006from1691-142296-0022.wav_gen.wav" type="audio/wav">
+       <source src="./long English/source-female/RASVC/convert15.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
 
-    </table> 
-
-
-    <h3>Target reference utterance-<audio controls>
-       <source src="./target/p246_011.wav" type="audio/wav">
-       </audio> p246_011 </h3>
-    <table border="1">
-    <tr>
-      <th>No.</th>
-      <th>Source</th>
-      <th>QuickVC-nosr (proposed)</th>
-      <th>QuickVC-sr (proposed)</th>
-      <th>Diff-VCTK</th>
-      <th>BNE-PPG-VC</th>
-      <th>VQMIVC</th>
-    </tr>
-
-    <tr>
-       <td>1</td>
-       <td>
-       <audio controls>
-       <source src="./sourcewav/265-136853-0007.wav" type="audio/wav">
-       </audio> 265-136853-0007
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p246_011from265-136853-0007.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p246_011from265-136853-0007.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p246_011from265-136853-0007.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p246_011from265-136853-0007.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p246_011from265-136853-0007.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
-    </tr>
-
-    <tr>
-       <td>2</td>
-       <td>
-       <audio controls>
-       <source src="./sourcewav/428-125879-0020.wav" type="audio/wav">
-       </audio> 428-125879-0020
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p246_011from428-125879-0020.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p246_011from428-125879-0020.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p246_011from428-125879-0020.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p246_011from428-125879-0020.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p246_011from428-125879-0020.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
-    </tr>
-
-    <tr>
-       <td>3</td>
-       <td>
-       <audio controls>
-       <source src="./sourcewav/727-124443-0119.wav" type="audio/wav">
-       </audio> 727-124443-0119
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p246_011from727-124443-0119.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p246_011from727-124443-0119.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p246_011from727-124443-0119.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p246_011from727-124443-0119.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p246_011from727-124443-0119.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
-    </tr>
-      
-    <tr>
-       <td>4</td>
-       <td>
-       <audio controls>
-       <source src="./sourcewav/1691-142296-0075.wav" type="audio/wav">
-       </audio> 1691-142296-0075
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p246_011from1691-142296-0075.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p246_011from1691-142296-0075.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
-    </tr>
-      
-    </table> 
+    </table>
 
     
-    <h3>Target reference utterance-<audio controls>
-       <source src="./target/p312_019.wav" type="audio/wav">
-       </audio> p312_019 </h3>
+    <h3>Short Chinese singing conversion-male<audio controls>
+  <source src="./short Chinese/source-male/source.wav" type="audio/wav">
+     </audio> source-male </h3>
     <table border="1">
     <tr>
       <th>No.</th>
-      <th>Source</th>
-      <th>QuickVC-nosr (proposed)</th>
-      <th>QuickVC-sr (proposed)</th>
-      <th>Diff-VCTK</th>
-      <th>BNE-PPG-VC</th>
-      <th>VQMIVC</th>
+      <th>Target</th>
+      <th>RASVC converted</th>
+  
     </tr>
 
     <tr>
        <td>1</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/811-130148-0027.wav" type="audio/wav">
-       </audio> 811-130148-0027
+       <source src="./short Chinese/source-male/target/0.wav" type="audio/wav">
+      </audio>
        </td>
-       <td>
+      <td>
        <audio controls>
-       <source src="./quickvc-nosr/p312_019from811-130148-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p312_019from811-130148-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p312_019from811-130148-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p312_019from811-130148-0027.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p312_019from811-130148-0027.wav_gen.wav" type="audio/wav">
+       <source src="./short Chinese/source-male/RASVC/convert0.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
@@ -537,66 +193,27 @@ audio {
        <td>2</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/876-126411-0093.wav" type="audio/wav">
-       </audio> 876-126411-0093
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-nosr/p312_019from876-126411-0093.wav.wav" type="audio/wav">
+       <source src="./short Chinese/source-male/target/1.wav" type="audio/wav">
        </audio>
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-sr/p312_019from876-126411-0093.wav.wav" type="audio/wav">
+       <source src="./short Chinese/source-male/RASVC/convert1.wav" type="audio/wav">
        </audio>
        </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p312_019from876-126411-0093.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p312_019from876-126411-0093.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p312_019from876-126411-0093.wav_gen.wav" type="audio/wav">
-       </audio>
-       </td>
+      
     </tr>
 
     <tr>
        <td>3</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/1094-157767-0044.wav" type="audio/wav">
-       </audio> 1094-157767-0044
+       <source src="./short Chinese/source-male/target/2.wav" type="audio/wav">
+       </audio> 
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-nosr/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./quickvc-sr/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./diffvc/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p312_019from1094-157767-0044.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p312_019from1094-157767-0044.wav_gen.wav" type="audio/wav">
+       <source src="./short Chinese/source-male/RASVC/convert2.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
@@ -605,38 +222,224 @@ audio {
        <td>4</td>
        <td>
        <audio controls>
-       <source src="./sourcewav/6978-92936-0012.wav" type="audio/wav">
-       </audio> 6978-92936-0012
+       <source src="./short Chinese/source-male/target/3.wav" type="audio/wav">
+       </audio> 
        </td>
        <td>
        <audio controls>
-       <source src="./quickvc-nosr/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
+       <source src="./short Chinese/source-male/RASVC/convert3.wav" type="audio/wav">
        </audio>
        </td>
+    </tr>
+    </table> 
+
+  
+     <h3>Short Chinese singing conversion-female<audio controls>
+  <source src="./short Chinese/source-female/source.wav" type="audio/wav">
+     </audio> source-female </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Target</th>
+      <th>RASVC converted</th>
+  
+    </tr>
+
+    <tr>
+       <td>1</td>
        <td>
        <audio controls>
-       <source src="./quickvc-sr/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
-       </audio>
+       <source src="./short Chinese/source-female/target/4.wav" type="audio/wav">
+      </audio>
        </td>
-       <td>
+      <td>
        <audio controls>
-       <source src="./diffvc/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./ppgvc/p312_019from6978-92936-0012.wav.wav" type="audio/wav">
-       </audio>
-       </td>
-       <td>
-       <audio controls>
-       <source src="./vqmivc/p312_019from6978-92936-0012.wav_gen.wav" type="audio/wav">
+       <source src="./short Chinese/source-female/RASVC/convert4.wav" type="audio/wav">
        </audio>
        </td>
     </tr>
 
-    </table> 
-       
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/5.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert5.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
 
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/6.wav" type="audio/wav">
+       </audio> 
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert6.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/7.wav" type="audio/wav">
+       </audio> 
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert7.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+    </table>   
+
+ <h3>Cross-domain conversion(from Chinese to English)-male<audio controls>
+  <source src="./short Chinese/source-female/source.wav" type="audio/wav">
+     </audio> source-male </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Target</th>
+      <th>RASVC converted</th>
+  
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/4.wav" type="audio/wav">
+      </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert4.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/5.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert5.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/6.wav" type="audio/wav">
+       </audio> 
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert6.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/7.wav" type="audio/wav">
+       </audio> 
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert7.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+    </table>   
+
+   <h3>Cross-domain conversion(from Chinese to English)-female<audio controls>
+  <source src="./short Chinese/source-female/source.wav" type="audio/wav">
+     </audio> source-female </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Target</th>
+      <th>RASVC converted</th>
+  
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/4.wav" type="audio/wav">
+      </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert4.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/5.wav" type="audio/wav">
+       </audio>
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert5.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/6.wav" type="audio/wav">
+       </audio> 
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert6.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/target/7.wav" type="audio/wav">
+       </audio> 
+       </td>
+       <td>
+       <audio controls>
+       <source src="./short Chinese/source-female/RASVC/convert7.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+    </table>   
+  
 </body>
 </html>
