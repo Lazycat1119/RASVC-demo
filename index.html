@@ -3,7 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Real-Time and Accurate: Zero-shot High-Fidelity Singing Voice Conversion with Multi-Condition Flow Synthesis-demo</title>
+  <title>MCF-SVC: Zero-shot High-Fidelity Singing Voice
+ Conversion with Multi-Condition Flow Synthesis</title>
   <style>
 body {
   font-size: 20px;
@@ -16,12 +17,16 @@ audio {
 </style>
 </head>
 <body>
-    <h2>Audio samples - Real-Time and Accurate: Zero-shot High-Fidelity Singing Voice Conversion with Multi-Condition Flow Synthesis</h2>
+    <h2>Audio samples - MCF-SVC: Zero-shot High-Fidelity Singing Voice
+ Conversion with Multi-Condition Flow Synthesis</h2>
 
   
   <hr style="height:3px;border:none;border-top:5px solid #555555;" />
 
-    <h2>We separately demonstrated the performance of the RASVC model in handling long English singing conversion , short Chinese singing conversion and cross-domain conversion(from Chinese to English), with each type of conversion including both male and female source singers.The audio used in our experiment was sampled at a rate of 16 KHz.</h2>
+    <h2>We separately demonstrated the performance of the MCF-SVC model in handling long English singing conversion ,
+      short Chinese singing conversion and cross-domain conversion(from Chinese to English), 
+      with each type of conversion including both male and female source singers.
+      The audio used in our experiment was sampled at a rate of 16 KHz.</h2>
 
     <h3>Long English singing conversion-male<audio controls>
        <source src="./long English/source-male/source.wav" type="audio/wav">
@@ -30,7 +35,7 @@ audio {
     <tr>
       <th>No.</th>
       <th>Target</th>
-      <th>RASVC converted</th>
+      <th>MCF-SVC converted</th>
       
     </tr>
 
@@ -100,7 +105,7 @@ audio {
     <tr>
       <th>No.</th>
       <th>Target</th>
-      <th>RASVC converted</th>
+      <th>MCF-SVC converted</th>
       
     </tr>
 
@@ -171,7 +176,7 @@ audio {
     <tr>
       <th>No.</th>
       <th>Target</th>
-      <th>RASVC converted</th>
+      <th>MCF-SVC converted</th>
   
     </tr>
 
@@ -241,7 +246,7 @@ audio {
     <tr>
       <th>No.</th>
       <th>Target</th>
-      <th>RASVC converted</th>
+      <th>MCF-SVC converted</th>
   
     </tr>
 
@@ -310,7 +315,7 @@ audio {
     <tr>
       <th>No.</th>
       <th>Target</th>
-      <th>RASVC converted</th>
+      <th>MCF-SVC converted</th>
   
     </tr>
 
@@ -379,7 +384,7 @@ audio {
     <tr>
       <th>No.</th>
       <th>Target</th>
-      <th>RASVC converted</th>
+      <th>MCF-SVC converted</th>
   
         </tr>
 
@@ -439,7 +444,12 @@ audio {
        </audio>
        </td>
     </tr>
-    </table>  
+    </table>
+  <h2>We designed the ablation experiment to prove the validity of
+ the multi-conditional flow model, and we deleted F0 encoder,
+ speaker encoder, and emotion encoder individually and then
+ two by two on the basis of all of them being present.Finally all of them were deleted.
+</h2>
   
 </body>
 </html>
