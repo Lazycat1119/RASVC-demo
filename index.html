@@ -445,11 +445,131 @@ audio {
        </td>
     </tr>
     </table>
+  
+    <hr style="height:3px;border:none;border-top:5px solid #555555;" />
+  
   <h2>We designed the ablation experiment to prove the validity of
  the multi-conditional flow model, and we deleted F0 encoder,
  speaker encoder, and emotion encoder individually and then
  two by two on the basis of all of them being present.Finally all of them were deleted.
 </h2>
+  <h3> We use the same target audio <audio controls>
+       <source src="./Ablation/target.wav" type="audio/wav">
+       </audio> and source audio<audio controls>
+       <source src="./Ablation/source.wav" type="audio/wav">
+as examples to demonstrate the conversion effects resulting from removing different encoders in the ablation experiments.
+ </h3>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>Method</th>
+      <th>Converted audio</th>
+      
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+      Ours
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Ablation/ours.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+
+    <tr>
+       <td>2</td>
+       <td>
+       - emotion encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+    <tr>
+       <td>3</td>
+       <td>
+       -F0 encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/2.wav" type="audio/wav">
+       </audio>
+       </td>
+    </tr>
+      
+    <tr>
+       <td>4</td>
+       <td>
+       -speaker encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/3.wav" type="audio/wav">
+       </audio>
+       </td>
+</tr>
+
+<tr>
+       <td>5</td>
+       <td>
+       - F0 and speaker encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/4.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+<tr>
+       <td>6</td>
+       <td>
+       - F0 and emotion encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/5.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+<tr>
+       <td>7</td>
+       <td>
+       - speaker and emotion encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/6.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+<tr>
+       <td>8</td>
+       <td>
+       - speaker, F0, emotion encoder
+       </td>
+       <td>
+       <audio controls>
+       <source src="./Ablation/7.wav" type="audio/wav">
+       </audio>
+       </td>
+      
+    </tr>
+
+    </table>
+
   
 </body>
 </html>
